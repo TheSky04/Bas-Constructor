@@ -1,0 +1,26 @@
+.heading-1 {
+  font-size: 4rem;
+  color: #fff;
+
+  margin-bottom: auto;
+
+  @media only screen and (max-width: $bp-smaller) {
+    line-height: 1.3;
+    margin-bottom: 2rem;
+  }
+}
+
+.heading-2 {
+  font-size: 2rem;
+  margin-left: 1rem;
+  color: $color-primary-light-3;
+}
+
+.heading-4 {
+  font-size: 2rem;
+  color: $color-primary;
+
+  @media only screen and (max-width: $bp-medium) {
+    font-size: 1.6rem;
+  }
+}

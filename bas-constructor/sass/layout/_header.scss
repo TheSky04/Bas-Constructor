@@ -1,0 +1,76 @@
+.header {
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  min-height: 75vh;
+
+  @media only screen and (max-width: $bp-small) {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__btn {
+    text-decoration: none;
+    color: $color-primary !important;
+    background-color: #fff;
+
+    &:hover {
+      color: #fff !important;
+    }
+  }
+
+  &__seenon-text {
+    color: #fff;
+    align-self: center;
+    margin-bottom: 2rem;
+    filter: brightness(70%);
+    margin-top: 5rem;
+    display: grid;
+    align-items: center;
+    gap: 1rem;
+    grid-template-columns: 1fr max-content 1fr;
+
+    &::before,
+    &::after {
+      content: "";
+      width: 20vw;
+      height: 1px;
+      background-color: $color-primary-light-2;
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    padding: 5rem;
+    background-image: linear-gradient(
+        rgba($color-primary, 0.7),
+        rgba($color-primary, 0.7)
+      ),
+      url(../../img/header.jpg);
+    background-size: cover;
+    background-position: top;
+    grid-column: 1 / 7;
+  }
+}
+
+.bas-logo {
+  height: 5rem;
+  align-self: center;
+  margin-bottom: 8rem;
+}
+
+.logos {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 3rem;
+  justify-items: center;
+  margin: 0 auto;
+
+  img {
+    height: 2vw;
+    filter: brightness(70%);
+  }
+}

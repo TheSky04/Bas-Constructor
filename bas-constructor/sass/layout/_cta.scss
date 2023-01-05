@@ -1,0 +1,46 @@
+.cta {
+  padding: 15rem;
+  background-image: linear-gradient(
+    to right bottom,
+    $color-primary-light,
+    $color-primary
+  );
+
+  @media only screen and (max-width: $bp-small) {
+    color: #fff;
+    padding: 2rem;
+  }
+
+  &__container {
+    min-height: 50rem;
+    background-color: #fff;
+    border-radius: 3px;
+    overflow: hidden;
+    background-image: linear-gradient(
+        105deg,
+        rgba(255, 255, 255, 0.9) 50%,
+        transparent 50%
+      ),
+      url(../../img/gallery/gal-10.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+
+    @media only screen and (max-width: $bp-big) {
+      background-image: linear-gradient(
+          105deg,
+          rgba(255, 255, 255, 0.9) 60%,
+          transparent 60%
+        ),
+        url(../../img/gallery/gal-10.jpg);
+    }
+
+    @media only screen and (max-width: $bp-small) {
+      background-image: linear-gradient(
+          rgba($color-primary, 0.8),
+          rgba($color-primary, 0.8)
+        ),
+        url(../../img/story/story-2.jpg);
+    }
+  }
+}

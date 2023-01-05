@@ -1,0 +1,44 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+$bp-big: 75em; // 1200px
+$bp-medium: 62.5em; // 1000px
+$bp-small: 50em; // 800 px
+$bp-smaller: 43.75em; // 700px
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+
+  @media only screen and (max-width: $bp-big) {
+    font-size: 56.25%;
+  }
+
+  @media only screen and (max-width: $bp-medium) {
+    overflow-x: hidden;
+  }
+
+  @media only screen and (max-width: $bp-smaller) {
+    font-size: 50%;
+  }
+}
+
+body {
+  font-size: 1.6rem;
+  line-height: 1.6;
+  font-family: "Rubik", sans-serif;
+  @media only screen and (max-width: $bp-medium) {
+    overflow-x: hidden;
+  }
+}
+
+.container {
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 0 3.2rem;
+}

@@ -1,0 +1,53 @@
+.story {
+  padding: 15rem 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(50rem, 1fr));
+
+  &__pictures {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    align-items: center;
+    min-height: 80vh;
+
+    background-image: linear-gradient(
+        to right,
+        rgba($color-primary, 0.5),
+        rgba($color-primary, 0.5)
+      ),
+      url(../../img/story/story-3.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+
+  &__content {
+    background-color: $color-primary-light-3;
+    padding: 10rem 6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  &__title {
+    color: $color-primary;
+    font-size: 3.5rem;
+    margin-bottom: 3rem;
+    line-height: 1;
+  }
+
+  &__subtitle {
+    color: $color-primary-light;
+    font-size: 2rem;
+    margin-left: 2rem;
+  }
+
+  &__text {
+    font-size: 1.5rem;
+    margin-bottom: 4rem;
+    color: $color-primary;
+  }
+
+  &__btn {
+    align-self: flex-start;
+  }
+}
